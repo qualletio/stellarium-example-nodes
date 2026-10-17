@@ -1,0 +1,24 @@
+{
+  "name": "local-example-node",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node ../../scripts/ensure-env.mjs --port 3200",
+    "prestart": "node ../../scripts/ensure-env.mjs --port 3200",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fastify": "^5.12.5",
+    "requestscript": "^1.1.0",
+    "stellarium-ts": "^0.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
