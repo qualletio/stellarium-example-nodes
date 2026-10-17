@@ -12,7 +12,7 @@ const node = new StellariumNode();
 const fastify = Fastify({ logger: true });
 await node.start(fastify, {
   port,
-  host: "127.0.0.1",
+  host: "0.0.0.0",
   startingPeer,
 });
 

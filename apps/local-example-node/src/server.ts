@@ -9,4 +9,4 @@ const node = new StellariumNode();
 await node.register(greet(baseUrl));
 
 const fastify = Fastify({ logger: true });
-await node.start(fastify, { port, host: "127.0.0.1" });
+await node.start(fastify, { port, host: "0.0.0.0" });
